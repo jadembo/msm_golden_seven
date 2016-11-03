@@ -43,10 +43,4 @@ class DirectorsController < ApplicationController
     redirect_to "/directors/" + @director.id.to_s
   end
 
-
-
-
-
-
-
 end
