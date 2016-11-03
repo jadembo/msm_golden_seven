@@ -18,4 +18,14 @@ Rails.application.routes.draw do
   get('/create_actor/', { :controller => 'actors', :action => 'create' })
 
 
+  #Movies
+  get('/movies', { :controller => 'movies', :action => 'index' })
+  get('/movies/new_form', { :controller => 'movies', :action => 'new_form' })
+  get('/movies/:id', { :controller => 'movies', :action => 'show' })
+  get('/movies/:id/edit_form', { :controller => 'movies', :action => 'edit' })
+  get('/delete_movie/:id', { :controller => 'movies', :action => 'delete' })
+  get('/update_movie/:id', { :controller => 'movies', :action => 'update' })
+  get('/create_movie/', { :controller => 'movies', :action => 'create' })
+
+
 end
